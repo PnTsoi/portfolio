@@ -1,0 +1,107 @@
+html { 
+    height: 100%; 
+    width: 100%;
+    overflow: scroll;
+
+}
+body { 
+    font-family: "Lato";
+    background-color: #253237;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(16, 6.25%);
+    background-color: #253237;
+}
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.topbar {
+    grid-column: 7/17;
+    grid-row: 1/2;
+    display: flex;
+    gap: 2vmin;
+    margin-left: auto;
+    animation: 1s ease-in 0s slideInRight;
+}
+.button {
+    background-color: #253237;
+    color: #E0FBFC;
+    font-family: "Alumni Sans Pinstripe";
+    font-size: 4vmin;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #395F35;
+    padding: 1vmin 1vmin 1vmin 1vmin;
+
+}
+@keyframes button-hover {
+    0% {background-color: #253237};
+    100% {background-color: #9ABFA5};
+
+}
+.button:hover {
+    background-color: #9ABFA5;
+    color: #395F35;
+    animation-name: button-hover;
+    animation-duration: 1s;
+}
+
+.content {
+    display: grid;
+    grid-row: 2/17;
+    grid-column: 2/17;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+.title {
+    grid-row: 3/5;
+    grid-column: 2/15;
+    color: #E0FBFC;
+    font-size: 5vmin;
+    font-family: "Roboto";
+}
+.feed {
+    grid-column: 4/20;
+    grid-row: 6/21;
+    display: flex;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+.item {
+    background-color: #E0FBFC;
+    flex-grow: 1;
+    grid-row: 12/15;
+    height: 22vmin;
+    overflow: scroll;
+}
+.item h1 {
+    font-size: 4vmin;
+    padding-left: 2vmin;
+    padding-top: 1vmin;
+}
+.item .date {
+    font-size: 2vmin;
+    padding-left: 2vmin;
+    padding-top: 1vmin;
+}
+.item .description {
+    font-size: 2vmin;
+    padding: 2vmin 2vmin 2vmin 2vmin;
+}

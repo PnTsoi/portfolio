@@ -1,0 +1,187 @@
+html { 
+    height: 100%; 
+    width: 100%;
+    overflow: scroll;
+
+}
+body { 
+    font-family: "Lato";
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(16, 6.25%);
+    background-color: #253237;
+}
+
+.topbar {
+    grid-column: 7/17;
+    grid-row: 1/2;
+    display: flex;
+    margin-left: auto;
+}
+.resume-button {
+    background-color: #253237;
+    color: #E0FBFC;
+    font-family: "Alumni Sans Pinstripe";
+    font-size: 4vmin;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #395F35;
+    padding: 1vmin 1vmin 1vmin 1vmin;
+
+}
+@keyframes button-hover {
+    0% {background-color: #253237};
+    100% {background-color: #9ABFA5};
+
+}
+.resume-button:hover {
+    background-color: #9ABFA5;
+    color: #395F35;
+    animation-name: button-hover;
+    animation-duration: 1s;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    grid-row: 7/17;
+    grid-column: 1/2;
+
+}
+
+.content {
+    display: grid;
+    grid-row: 2/17;
+    grid-column: 2/17;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+
+.name {
+    font-family: "Roboto";
+    font-size: 8.5vmin;
+    color: #E0FBFC;
+    padding-top: 3rem;
+    grid-column: 2/8;
+    grid-row: 1/5;
+}
+
+.welcome {
+    font-family: "Alumni Sans Pinstripe";
+    font-size: 3.5vmin;
+    color: #E0FBFC;
+    grid-column: 9/17;
+    grid-row: 2/6;
+    padding-left: 1vmin;  
+}
+
+.working-maintitle {
+    font-family: "Roboto";
+    color: #E0FBFC;  
+    font-size: 4vmin;
+}
+.projects-maintitle { 
+    font-size: 4vmin;
+    font-family: "Roboto";
+    color: #E0FBFC;  
+}
+
+.projects { 
+    font-family: "Lato";
+    color: #F5EFED; 
+    grid-column: 9/19;
+    grid-row: 7/11;
+    padding-left: 1vmin; 
+    font-size: 3vmin;
+}
+@keyframes content-hover {
+    0% {background-color: #253237};
+    100% {background-color: #9ABFA5};
+
+}
+.projects:hover .projects-maintitle{
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35;
+    
+}
+
+.projects:hover {
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35; 
+}
+.pic {
+    grid-column: 2/5;
+    grid-row: 5/10;
+    
+}
+.pic img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.about-maintitle {
+    font-family: "Roboto";
+    color: #E0FBFC;  
+    font-size: 4vmin;
+}
+
+.about { 
+    font-family: "Alumni Sans Pinstripe";
+    color: #F5EFED; 
+    grid-column: 2/8;
+    grid-row: 7/20;
+    padding-left: 1vmin;  
+    font-size: 3vmin;
+    overflow: scroll;
+}
+.smallbox {
+    cursor: pointer;
+}
+
+
+.experience-maintitle {
+    font-family: "Roboto";
+    font-size: 4vmin;
+    color: #E0FBFC;
+}
+.experience { 
+    font-family: "Lato";
+    color: #F5EFED; 
+    grid-column: 9/19;
+    padding-left: 1vmin;  
+    grid-row: 12/16; 
+    font-size: 3vmin;
+}
+.experience:hover .experience-maintitle{
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35;
+    
+}
+
+.experience:hover {
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35; 
+}
