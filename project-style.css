@@ -87,26 +87,30 @@ body {
 .projects .item1 {
     background-size: 50%;
     grid-column: 1/10;
-    grid-row: 1/11;
+    grid-row: 2/9;
     color: #E0FBFC;
 }
-.item1 h1 {
+
+.smallbox {
+    cursor: pointer;
+}
+.item1 a {
     color: #E0FBFC;
     padding-left: 3vmin;
     padding-top: 3vmin;
-    font-size:4vmin;
+    font-size:3vmin;
 }
-.item2 h1 {
+.item2 a {
     color: #E0FBFC;
     padding-left: 3vmin;
     padding-top: 3vmin;
-    font-size:4vmin;
+    font-size:3vmin;
     color: #E0FBFC;
 }
 .projects .item2 {
     background-size: 50%;
     grid-column: 11/20;
-    grid-row: 1/11;
+    grid-row: 2/9;
     color: #E0FBFC;
 }
 .working-title {
@@ -117,12 +121,12 @@ body {
     font-family: "Roboto";
 }
 .working-item {
-    grid-row: 14/20;
+    grid-row: 14/19;
     grid-column: 5/17;
     background-size: 50%;
     color: #E0FBFC;
 }
-.working-item h1 {
+.working-item a {
     color: #E0FBFC;
     font-size: 4vmin;
     padding-top: 3vmin;
@@ -133,4 +137,53 @@ body {
     font-size: 3vmin;
     padding-left: 3vmin;
     padding-top: 3vmin;
+}
+
+
+@keyframes content-hover {
+    0% {background-color: #253237};
+    100% {background-color: #9ABFA5};
+
+}
+.item1:hover .smallbox{
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35;
+    
+}
+
+.item1:hover {
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35; 
+}
+.item2:hover .smallbox{
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35;
+    
+}
+
+.item2:hover {
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35; 
+}
+.working-item:hover .a{
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35;
+    
+}
+
+.working-item:hover {
+    animation-duration: 2s;
+    animation-name: content-hover;
+    background-color: #9ABFA5;
+    color: #395F35; 
 }
