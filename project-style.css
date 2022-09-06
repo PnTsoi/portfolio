@@ -146,9 +146,7 @@ body {
 
 }
 .item1:hover .smallbox{
-    animation-duration: 2s;
     animation-name: content-hover;
-    background-color: #9ABFA5;
     color: #395F35;
     
 }
@@ -160,9 +158,7 @@ body {
     color: #395F35; 
 }
 .item2:hover .smallbox{
-    animation-duration: 2s;
     animation-name: content-hover;
-    background-color: #9ABFA5;
     color: #395F35;
     
 }
@@ -173,10 +169,8 @@ body {
     background-color: #9ABFA5;
     color: #395F35; 
 }
-.working-item:hover .a{
-    animation-duration: 2s;
+.working-item:hover .smallbox{
     animation-name: content-hover;
-    background-color: #9ABFA5;
     color: #395F35;
     
 }
